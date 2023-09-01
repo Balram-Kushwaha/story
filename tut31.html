@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+     h1{
+        background-color: aqua;
+        color:black;
+        font-weight:bold;
+        text-align:center;
+     }
+    
+     /* if p is contained by any li which is contained by div */
+     /* div li p{
+        color:yellow;
+        background-color: green;
+        font-weight: bold;
+     } */
+    
+     /* if p is right inside div then this css will be applied */
+     /* div > p{
+        color:yellow;
+        background-color: green;
+        font-weight: bold;
+     } */
+     
+     /* if p is right after div that is p is the next sibilik of div */
+     /* div + p{
+        color:white;
+        background-color: red;
+
+     } */
+
+    </style>
+</head>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is another paragraph inside li </p></li>
+                <li>this will not affect with p</li>
+                <p>this is a pra inside the ul</p>
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outer most paragraph</p>
+</body>
+</html>

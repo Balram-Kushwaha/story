@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid</title>
+    <style>
+        .container{
+            display:grid;
+            grid-gap:1rem;
+            
+            grid-template-areas:'navbar navbar navbar navbar' 
+            'section section section aside'
+            'footer footer footer footer' ;
+        }
+        @media (max-width:300px){
+            body{
+                
+                background-color: cyan;
+            }
+        }
+        @media (min-width:300px) and (max-width:500px)  {
+            body{
+                
+                background-color: blueviolet;
+            }
+        }
+        @media (min-width:500px) and (max-width:800px)  {
+            body{
+               
+                background-color: yellow;
+            }
+            .container{
+            display:grid;
+            grid-gap:1rem;
+            
+            grid-template-areas:
+            'navbar navbar navbar navbar' 
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer' ;
+        }
+        }
+        @media (min-width:800px) {
+            body{
+                background-color: red;
+            }
+        }
+        .bdr{
+            border:2px solid red;
+            padding:23px;
+            background-color: white;
+        }
+        nav{
+            grid-area:navbar;
+        }
+        section{
+            grid-area:section;
+        }
+        aside{
+            grid-area:footer;
+        }
+        footer{
+            grid-area:aside;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            home about contact
+        </nav>
+        <section class="bdr">
+            <h2>learn css in hindi</h2>
+        </section>
+        <aside class="bdr">
+            <h1>more about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr" >
+        copyright code with harry
+    </footer>
+</body>
+</html>

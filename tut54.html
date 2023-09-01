@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intaraction using alart conform and prompt</title>
+</head>
+<body>
+    <div class="container">
+        this is a page
+    </div>
+
+
+    <script>
+       //alert in in-browser javascript-dose not return anything
+    //   let a =  alert("this is a message");
+    //   console.log(a);
+
+
+    // prompt in js
+    let name = prompt("what is your name?","Guest");
+    console.log(name);
+ 
+    //conform in js
+    let deletpost = confirm("do you really want to delete this post");
+    console.log(deletpost);
+
+    if(deletpost){
+        // code to delete the post
+        console.log("your post has been deteted sucesfully");
+    }
+    else{
+        //code to cancel deletion of the post
+        console.log("your post has not been deteted ");
+    }
+    </script>
+</body>
+</html>

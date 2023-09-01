@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <style>
+    *{
+      box-sizing:border-box;
+    }
+    body{
+        font-family:'Ubuntu',sans-serif;
+    }
+    .container{
+             width:900px;
+             border:3px solid purple;
+             background-color: rgb(250,226,205);
+             margin:33px auto;
+    }
+
+    .item{
+        border:3px solid green;
+        margin:12px 3px;
+        padding:12px 3px;
+        background:rgb(142, 142, 125);
+    }
+
+    #fruitspara{
+         float:left;
+         width:50%;
+    }
+    #computerpara{
+        float:left;
+         width:48%;
+    }
+    
+    #stationery{
+        /* float:left; */
+        clear:both;
+         width:100%;
+    }
+    
+    p,h1{
+        /* text-align:right;
+        text-align:left;
+        text-align:center; */
+        text-align:justify;
+    }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div id="fruitspara" class="item">
+            <h3>fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa exercitationem non voluptates velit autem fugit voluptas repudiandae quia? Quos sed, voluptate doloribus adipisci tempora cupiditate enim voluptatem. Enim obcaecati ipsa ratione, blanditiis quos itaque.</p>
+        </div>
+
+        <div id="computerpara" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa exercitationem non voluptates velit autem fugit voluptas repudiandae quia? Quos sed, voluptate doloribus adipisci tempora cupiditate enim voluptatem. Enim obcaecati ipsa ratione, blanditiis quos itaque.</p>
+        </div>
+        <div id="stationery" class="item">
+            <h3>stationery</h3>
+            <p id="stationery" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa exercitationem non voluptates velit autem fugit voluptas repudiandae quia? Quos sed, voluptate doloribus adipisci tempora cupiditate enim voluptatem. Enim obcaecati ipsa ratione, blanditiis quos itaque.</p>
+        </div>
+
+        <div id="glass" class="item">
+            <h3>glass</h3>
+            <p id="glass" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa exercitationem non voluptates velit autem fugit voluptas repudiandae quia? Quos sed, voluptate doloribus adipisci tempora cupiditate enim voluptatem. Enim obcaecati ipsa ratione, blanditiis quos itaque.</p>
+        </div>
+    </div>
+</body>
+</html>

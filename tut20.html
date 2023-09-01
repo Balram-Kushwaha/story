@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            background-color:cyan;
+        }
+    .container{
+        background-color: burlywood;
+        border:3px solid rgb(0, 255, 72);
+
+        /* we can set margin/pedding left right top bottom like this */
+        /* padding-top:9px;
+        padding-left:23px;
+        padding-right:19px;
+        padding-bottom:24px; */
+        /*
+        padding:23px 56px 6px 78px;  padding/margin -top right bottom left 
+       */
+        padding:34px 19px;/*padding:y(top/bottom) x(left/right)*/
+        /* margin is same as padding */
+        margin:34px 19px;
+        border-radius:34px;
+        width:233px;
+        box-sizing:border-box;
+        /* height:56px; */
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis, sequi reprehenderit
+            distinctio neque ducimus ad vitae porro numquam, veritatis harum nam quia?
+        </p>
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis, sequi reprehenderit
+            distinctio neque ducimus ad vitae porro numquam, veritatis harum nam quia?
+        </p>
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis, sequi reprehenderit
+            distinctio neque ducimus ad vitae porro numquam, veritatis harum nam quia?
+        </p>
+    </div>
+</body>
+
+</html>
